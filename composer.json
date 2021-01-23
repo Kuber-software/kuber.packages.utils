@@ -1,0 +1,30 @@
+{
+    "name": "kubersoftware/utils",
+    "type": "library",
+    "description": "kubersoftware utils",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nezhkind",
+            "email": "dnezhkin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Kubersoftware\\": "Kubersoftware/"
+        }
+    },
+    "require": {
+        "ramsey/uuid": "^4.1",
+        "doctrine/collections": "^1.6",
+        "mhujer/jms-serializer-uuid": "^3.3",
+        "jms/serializer": "^3.11",
+        "gbprod/uuid-normalizer": "^1.2",
+        "symfony/serializer": "4.4.*",
+        "symfony/property-access": "4.4.*",
+        "symfony/property-info": "4.4.*",
+        "phpdocumentor/reflection-docblock": "^5.2",
+        "emag-tech-labs/rabbitmq-bundle": "2.4.0"
+    }
+}
