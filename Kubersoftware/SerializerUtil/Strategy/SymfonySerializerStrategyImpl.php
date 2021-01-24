@@ -6,7 +6,7 @@ namespace Kubersoftware\SerializerUtil\Strategy;
 use DateTime;
 use GBProd\UuidNormalizer\UuidDenormalizer;
 use GBProd\UuidNormalizer\UuidNormalizer;
-use Kubersoftware\SerializerUtil\SerializerInterface;
+use Kubersoftware\SerializerUtil\SerializerStrategy;
 use Symfony\Component\PropertyInfo\Extractor\PhpDocExtractor;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
 use Symfony\Component\PropertyInfo\PropertyInfoExtractor;
@@ -16,7 +16,7 @@ use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
-class SymfonySerializerStrategy implements SerializerInterface
+class SymfonySerializerStrategyImpl implements SerializerStrategy
 {
     private Serializer $serializer;
 

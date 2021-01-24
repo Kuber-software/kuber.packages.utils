@@ -3,7 +3,7 @@
 namespace Kubersoftware\SerializerUtil;
 
 
-interface SerializerInterface
+interface SerializerStrategy
 {
     public function serialize(object $data, string $format): string;
 

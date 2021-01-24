@@ -42,7 +42,7 @@ class RpcClientDto
 
     public function __construct()
     {
-        $this->requestId = bin2hex(random_bytes(15));
+        $this->requestId = bin2hex(random_bytes(20));
     }
 
     /**

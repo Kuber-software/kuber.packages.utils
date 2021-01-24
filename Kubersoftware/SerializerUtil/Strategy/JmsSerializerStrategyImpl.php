@@ -7,10 +7,10 @@ namespace Kubersoftware\SerializerUtil\Strategy;
 use JMS\Serializer\Handler\HandlerRegistry;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
-use Kubersoftware\SerializerUtil\SerializerInterface;
+use Kubersoftware\SerializerUtil\SerializerStrategy;
 use Mhujer\JmsSerializer\Uuid\UuidSerializerHandler;
 
-class JmsSerializerStrategy implements SerializerInterface
+class JmsSerializerStrategyImpl implements SerializerStrategy
 {
     private Serializer $serializer;
 
