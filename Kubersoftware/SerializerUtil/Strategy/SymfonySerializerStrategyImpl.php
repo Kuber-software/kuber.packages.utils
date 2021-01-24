@@ -40,4 +40,14 @@ class SymfonySerializerStrategyImpl implements SerializerStrategy
     {
         return $this->serializer->deserialize($data, $objectName, $format);
     }
+
+    public function toArray(object $object): array
+    {
+        // TODO: Implement toArray() method.
+    }
+
+    public function fromArray(array $array): object
+    {
+        // TODO: Implement fromArray() method.
+    }
 }
