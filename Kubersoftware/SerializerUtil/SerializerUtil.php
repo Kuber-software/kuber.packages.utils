@@ -26,8 +26,8 @@ class SerializerUtil
         return $this->serializerStrategy->toArray($object);
     }
 
-    public function fromArray(array $array): object
+    public function fromArray(array $array, string $objectName): object
     {
-        return $this->serializerStrategy->fromArray($array);
+        return $this->serializerStrategy->fromArray($array, $objectName);
     }
 }

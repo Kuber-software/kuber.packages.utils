@@ -33,11 +33,11 @@ class JmsSerializerStrategyImpl implements SerializerStrategy
 
     public function toArray(object $object): array
     {
-        // TODO: Implement toArray() method.
+        return $this->serializer->toArray($object);
     }
 
-    public function fromArray(array $array): object
+    public function fromArray(array $array, string $objectName): object
     {
-        // TODO: Implement fromArray() method.
+        return $this->serializer->fromArray($array, $objectName);
     }
 }

@@ -11,5 +11,5 @@ interface SerializerStrategy
 
     public function toArray(object $object): array;
 
-    public function fromArray(array $array): object;
+    public function fromArray(array $array, string $objectName): object;
 }
