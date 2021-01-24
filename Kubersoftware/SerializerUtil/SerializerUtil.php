@@ -20,4 +20,14 @@ class SerializerUtil
     {
         return $this->serializerStrategy->deserialize($data, $objectName, $format);
     }
+
+    public function toArray(object $object): array
+    {
+        return $this->serializerStrategy->toArray($object);
+    }
+
+    public function fromArray(array $array): object
+    {
+        return $this->serializerStrategy->fromArray($array);
+    }
 }
