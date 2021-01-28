@@ -26,7 +26,7 @@ class SymfonySerializerStrategyImpl implements SerializerStrategy
         $phpDocExtractor = new PhpDocExtractor();
         $encoder = [new JsonEncoder()];
         $extractor = new PropertyInfoExtractor([$reflectionExtractor], [$phpDocExtractor, $reflectionExtractor], [$phpDocExtractor], [$reflectionExtractor], [$reflectionExtractor]);
-        $normalizer = array(new UuidNormalizer(), new UuidDenormalizer(), new DateTimeNormalizer(DateTime::ATOM), new ArrayDenormalizer(),
+        $normalizer = array(new UuidNormalizer(), new UuidDenormalizer(), new DateTimeNormalizer([DateTime::ATOM]), new ArrayDenormalizer(),
             new ObjectNormalizer(null, null, null, $extractor));
         $this->serializer = new Serializer($normalizer, $encoder);
     }
