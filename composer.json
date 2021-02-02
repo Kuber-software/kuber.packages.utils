@@ -25,6 +25,13 @@
         "symfony/property-info": "^4.4|^5.0",
         "symfony/serializer": "^4.4|^5.0",
         "phpdocumentor/reflection-docblock": "^5.2",
-        "emag-tech-labs/rabbitmq-bundle": "2.4.0"
-    }
+        "emag-tech-labs/rabbitmq-bundle": "2.4.0",
+        "kuber-software/communication-object": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:kuber-software/communication-object.git"
+        }
+    ]
 }
